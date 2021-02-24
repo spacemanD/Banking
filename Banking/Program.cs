@@ -73,7 +73,7 @@ namespace Banking
                 sum,
                 AddSumHandler,  // обработчик добавления средств на счет
                 WithdrawSumHandler, // обработчик вывода средств
-                (o, e) => Console.WriteLine(e.Message), // обработчик начислений процентов в виде лямбда-выражения
+                (o, e) => Console.WriteLine(e.Message), 
                 CloseAccountHandler, // обработчик закрытия счета
                 OpenAccountHandler); // обработчик открытия счета
         }
